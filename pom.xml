@@ -5,14 +5,33 @@
     <groupId>com.lzp.gulimall</groupId>
     <artifactId>gulimall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gulimall</name>
+    <name>mall</name>
     <description>聚合服务</description>
     <packaging>pom</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <modules>
         <module>gulimall-ware</module>
         <module>gulimall-member</module>
         <module>gulimall-order</module>
         <module>gulimall-coupon</module>
         <module>gulimall-product</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>gulimall-common</module>
     </modules>
 </project>
